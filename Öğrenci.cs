@@ -2,21 +2,14 @@
 
 namespace LibraryManagementSystem.Models
 {
-    // Student sınıfı: Person'dan türer (INHERITANCE).
-    //
-    // POLYMORPHISM: DisplayMenu() metodu Person'daki virtual metodun
-    //               override edilmiş halidir. Öğrenciye özel menüyü gösterir.
+    
     public class Student : Person
     {
-        // ── Constructor ──────────────────────────────────────────────────────────
-        // "base(id, name)" → Person sınıfının constructor'ını çağırır.
+       
         public Student(int id, string name) : base(id, name) { }
 
         public Student() { }
 
-        // ── DisplayMenu() — override ─────────────────────────────────────────────
-        // Person'daki "virtual" metot burada "override" ediliyor (Polymorphism).
-        // Öğrenciye özel işlem listesi gösterilir.
         public override void DisplayMenu()
         {
             Console.WriteLine("╔══════════════════════════════╗");
